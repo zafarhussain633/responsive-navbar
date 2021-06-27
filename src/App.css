@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: rgb(46, 47, 51);
+  padding: 8px 4rem;
+  color: rgba(255, 255, 255, 0.582);
+
+}
+
+.nav-link{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-body1 , .header-body2{
+  display: flex;
+}
+
+.header-body1>div{
+  margin-right: 1.5rem;
+}
+
+.header-body2>div{
+  margin-left: 1.5rem;
+}
+
+
+#nav-menu{
+  background-color: black;
+  padding: 12px 4rem;
+  margin-top:-8px; 
+}
+
+#center-logo{
+  display: none;
+  
+}
+
+#rightnav > div{
+  margin-left: 2.5rem;
+  color: color;
+  font-weight: bold;
+}
+
+#rightnav{
+  position: absolute;
+  right: 4rem;
+}
+
+i{
+  margin-right: 2px  ;
+  cursor: pointer;
+}
+.hamburger{
+  background-color: white;
+  border-color: white;
+}
+
+.dropdown-item:hover{
+  background-color: rgba(56, 58, 63, 0.973);
+}
+
+
+.child-dropdown-list{
+  display: none;
+}
+
+.show-dropdown-list{
+  cursor: pointer;
+  list-style-type: none;
+  position: absolute;
+  top: 0px;
+  left: 12.5rem;
   color: white;
+  background-color: black;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.rightArrow{
+  float: right;
+  margin-top: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#Special-color{
+  color: rgba(253, 253, 10, 0.973);
+}
+
+
+
+.child-dropdown{
+ color: white;
+}
+
+@media(max-width: 990px){
+ #navbar{
+   margin-top: -30px;
+  }  
+  #hamburger-btn{
+    float: left;
   }
-  to {
-    transform: rotate(360deg);
+
+  #origin-logo{
+    display: none;
+  }
+  #center-logo{
+    display: flex;
+    justify-content: center;
+  }
+  header{
+    display: none;
+  }
+  #nav-menu{
+    padding: 12px 1rem;
+  }
+  #rightnav{
+    position: relative;
+    right: 10px;
+  }
+  #rightnav > div{
+    margin-left: 1rem;
+  }
+  i{
+    display: none;
+  }
+  .show-dropdown-list{
+   display: none;
   }
 }
+
+
